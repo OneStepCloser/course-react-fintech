@@ -38,7 +38,6 @@ export default class CreateAccount extends React.Component {
     });
   }
 
-
   validationsForm() {
     return Object.keys(this.rules).every(key => this.rules[key].every(rule => rule(this.state[key])));
   }

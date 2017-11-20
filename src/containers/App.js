@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Sidebar from '../components/Sidebar/Sidebar';
 import Home from '../pages/Home';
+import About from '../pages/About';
 import Account from '../pages/Account';
 import CreateAccount from '../pages/CreateAccount';
 
@@ -56,6 +57,7 @@ class App extends Component {
                 component={() => <Account operations={this.state.operations} onSubmit={this.handleSubmit}/>}
               />
               <Route path='/create-account' component={CreateAccount} />
+              <Route path='/about' component={About} />
             </div>
           </div>
         </div>
