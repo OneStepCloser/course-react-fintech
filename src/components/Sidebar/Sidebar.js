@@ -14,7 +14,7 @@ export default ({ accounts }) => {
       </div>
 
       {
-        Object.keys(accounts) ? Object.keys(accounts).map(accountId => (
+        Object.keys(accounts).map(accountId => (
           <NavLink key={accountId} to={'/account/' + accountId} className='Link' activeClassName='Link--active'>
             <div className='Sidebar__account'>
               <div className='Sidebar__account-name'>
@@ -26,7 +26,7 @@ export default ({ accounts }) => {
               </div>
             </div>
           </NavLink>
-        )) : null
+        ))
       }
 
       <NavLink to='/create-account' className='Link' activeClassName='Link--active'>

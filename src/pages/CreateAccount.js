@@ -23,7 +23,7 @@ export default class CreateAccount extends React.Component {
     ],
     currency: [
       val => val.length !== 0,
-      val =>  ['RUB', 'USD', 'GBP', 'EUR'].indexOf(val.toUpperCase()) >= 0
+      val => ['RUB', 'USD', 'GBP', 'EUR'].indexOf(val.toUpperCase()) >= 0
     ],
     description: [
       val => val.length !== 0
@@ -55,7 +55,7 @@ export default class CreateAccount extends React.Component {
       return;
     }
 
-    this.props.createAcoount(this.state);
+    this.props.createAccount(this.state);
 
     this.formClear();
   };
@@ -79,10 +79,3 @@ export default class CreateAccount extends React.Component {
     );
   }
 }
-
-// export default () => (
-//   <div>
-//     <h2>Создание аккаунта</h2>
-//     <p>Здесь мы будем создавать новые счета</p>
-//   </div>
-// );

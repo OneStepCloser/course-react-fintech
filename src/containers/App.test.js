@@ -72,7 +72,7 @@ describe('Интеграционный тест', () => {
 
       it('Повторно отправляем форму и проверяем, что там 2 account', () => {
         const result = ["1", "2"];
-        setValue('Дебетовка', 'USB', 'Безумные траты');
+        setValue('Дебетовка', 'USD', 'Безумные траты');
         wrapper.find('form').simulate('submit');
 
         expect(Object.keys(wrapper.find(App).instance().state.accounts)).toEqual(result);
